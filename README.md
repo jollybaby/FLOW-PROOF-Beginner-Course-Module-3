@@ -16,19 +16,20 @@ This is a smart contract that implements a struct and provides function to add a
 
 # Usage
 
-peoples : This is a public variable that represents a mapping from 'Address' to 'Person' struct instances
+library : This is a public variable that represents a mapping from 'Address' to 'book' struct instances
 
-Employees: It is a user defined struct that represents an individual's information. It has the following fields:
+Books: It is a user defined struct that represents an book's information.
+It has the following fields:
 
-'name': A field type of String to store the employees name.
+'title': A field type of String to store the book title.
 
-'employeeid': A field type of String to store the employee's id .
+'bookid': A field type of String to store the book's id .
 
-'age': A field type of UInt to store the employees age.
+'YearPublished': A field type of UInt to store the year published.
 
-'account': A field type of Address to store the person's blockchain address. This is used to uniquely identify individuals in the 'people' mapping.
+'account': A field type of Address to store the book's blockchain address. This is used to uniquely identify books in the 'library' mapping.
 
-addEmployees(): This is a public function defined within the contract that allows users to add a new employees information to the 'peoples' mapping. It takes four arguments: 'employeeid','name','age' and 'account'.
+addBooks(): This is a public function defined within the contract that allows users to add a new books information to the 'library' mapping. It takes four arguments: 'bookid','title','YearPublished' and 'account'.
 
-init(): This is the contract's contstructor which is called when the contract is deployed. It intializes the contract's people mapping as an empty map.
+init(): This is the contract's contstructor which is called when the contract is deployed. It intializes the contract's library mapping as an empty map.
 
